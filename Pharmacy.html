@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy</title>
+    <link rel="stylesheet" href="Pharmacy_style.css">
+    </head>
+
+<body>
+    <h1 id="header">Pharmacy</h1>
+    <nav id = "navigate">
+    <ul class="menu">
+        <li><a href="Pharmacy.html">Home</a></li>
+<!-- Drop Down Menu for Our medicines-->
+        <li><a href="#">Our Medicines</a>
+            <ul id ="Dropdown_1">
+                <li><a href="#">Fever</a></li>
+                <li><a href="#">Muscle Pain</a></li>
+                <li><a href="#">Cold and Caugh</a></li>
+            </ul>
+        </li>
+<!-- Drop Down Menu for the Health Care-->
+        <li><a href="#">Health Care</a>
+            <ul id ="Dropdown_2">
+                <li><a href="#">Baby Care</a></li>
+                <li><a href="#">Skin Care</a></li>
+                <li><a href="#">Home Care</a></li>
+                <li><a href="#">Personal Care</a></li>
+                <li><a href="#">Pet Care</a></li>
+            </ul>
+        </li>
+
+        <li><a href="Patient.html">Lab Test</a></li>
+
+    </ul>
+    </nav>
+<!--First thing in the web page is to show offers or some information in the form of images.
+a. Use the Images given in the project file and create a simple animation to show
+them one after the other infinite times. Apply a border of 2px solid steelblue--> 
+
+  <!--  <img src="./HTML CSS - Images/images/Animation/ani2.png"> -->
+    <div class="pict_animate"></div>
+
+<!--4. Next, In the same page after animation create two sample sections of the products as
+Covid Care and Diabetes Care-->
+    <form action="message.html">
+        <table>
+            <p> <h3>Covid Care</h3></p>
+        <tr>
+            <th>Covid Test Kit</th>
+            <th>Covid Essentials</th>
+            <th>Sanitizer Bottle</th>
+            <th>Mask</th>
+        </tr>
+        <tr>
+            <td>
+              <img class="caresize" src = "./HTML CSS - Images/Images/Products/c1.jpg">
+            </td>
+            <td>
+                <img class="caresize" src = "./HTML CSS - Images/Images/Products/c2.jpg">
+            </td>
+            <td>
+                <img class="caresize" src = "./HTML CSS - Images/Images/Products/c3.jpg">
+            </td>
+            <td>
+                <img class="caresize" src = "./HTML CSS - Images/Images/Products/c4.jpg">
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Rs. 40</td>
+            <td>Rs. 240</td>
+            <td>Rs. 99</td>
+            <td>Rs. 45</td>
+        </tr>
+        <tr>
+            <td>Offer Rs. 30/-</td>
+            <td>Offer Rs. 170/-</td>
+            <td>Offer Rs. 87/-</td>
+            <td>Offer Rs. 30/-</td>
+        </tr>
+
+        <tr>
+            <td><button class="addtocart" type="button" onclick="changecolor()">Add to Cart</button></td>
+            <td><button class="addtocart" type="button" onclick="changecolor()">Add to Cart</button></td>
+            <td><button class="addtocart" type="button" onclick="changecolor()">Add to Cart</button></td>
+            <td><button class="addtocart" type="button" onclick="changecolor()">Add to Cart</button></td>
+        </tr>
+              
+        </table>
+        <table>
+            <!-- Diabetes Care-->
+
+        <p> <h3>Diabetes Care</h3></p>
+        <tr>
+            <th>Mask</th>
+            <th>Mask</th>
+            <th>Mask</th>
+            <th>Mask</th>
+        </tr>
+        <tr>
+            <td>
+              <img class="caresize" src = "./HTML CSS - Images/Images/Products/d1.jpg">
+            </td>
+            <td>
+                <img class="caresize" src = "./HTML CSS - Images/Images/Products/d2.jpg">
+            </td>
+            <td>
+                <img class="caresize" src = "./HTML CSS - Images/Images/Products/d3.jpg">
+            </td>
+            <td>
+                <img class="caresize" src = "./HTML CSS - Images/Images/Products/d4.png">
+            </td>
+        </tr>
+
+              
+        <tr>
+            <td>Rs. 45</td>
+            <td>Rs. 45</td>
+            <td>Rs. 45</td>
+            <td>Rs. 35</td>
+        </tr>
+        <tr>
+            <td>Offer Rs. 30/-</td>
+            <td>Offer Rs. 30/-</td>
+            <td>Offer Rs. 30/-</td>
+            <td>Offer Rs. 30/-</td>
+        </tr>
+        
+        <tr>
+            <td><button class="addtocart" type="button" onclick="changecolor()">Add to Cart</button></td>
+            <td><button class="addtocart" type="button" onclick="changecolor()">Add to Cart</button></td>
+            <td><button class="addtocart" type="button" onclick="changecolor()">Add to Cart</button></td>
+            <td><button class="addtocart" type="button" onclick="changecolor()">Add to Cart</button></td>
+        </tr>
+
+        </table>
+
+         <style>
+             changecolor(){
+                background-color:red;
+            }
+       </style>
+        
+    </form>
+
+    
+<!--Footer-->
+    <div class="fot">
+        <footer>@copyright. Only for demonstration purposes</footer>
+    </div>
+  
+
+</body>
+
+</html>

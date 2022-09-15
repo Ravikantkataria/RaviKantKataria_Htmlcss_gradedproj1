@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Details</title>
+    <link rel="stylesheet" href="Pharmacy_style.css">
+</head>
+
+<body>
+    <form id="form" action="">
+        <section>
+            <aside>
+                <img id="labtest" src="./HTML CSS - Images/Images/Lab-Test/lab-test.jpg">
+            </aside>
+            <p><h3>1. Your Contact Details</h3></p>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" style="outline:none;">
+
+            <label for="patientid">Patient Id if exists</label>
+            <input type="text" id="patientid">
+            <br>
+            <br>
+            <label for="contactno">Contact Number</label>
+            <input type="number" id="contactno" min="6000000000" max="9999999999" required>
+
+            <label for="emailid">Email Id</label>
+            <input type="email" id="emailid" required>
+            </div>
+            <div>
+                <p><h3>2. Address</h3></p>
+                <label for="houseno">House No</label>
+                <input type="text" id="houseno">
+
+                <label for="street">Street</label>
+                <input type="text" id="street">
+                <br>
+                <br>
+                <label for="area">Area</label>
+                <input type="text" id="area">
+
+                <label for="district">District</label>
+                <select name="dist" id="district">
+                    <option value="Choose">Choose</option>
+                    <option value="ghz">Ghaziabaad</option>
+                    <option value="del">Delhi</option>
+                    <option value="kol">Kolkatta</option>
+                    <option value="bang">Bangalore</option>
+                </select>
+
+            </div>
+            <div>
+                <p><h3>3. Choose the test type</h3></p>
+                <label for="a1">CBC</label>
+                <input type="radio" id="a1" name="option" value="CBC">
+                
+                <label for="a2">Complete Urine</label>
+                <input type="radio" id="a2" name="option" value="Complete Urine">
+                   <br>
+                <label for="a3">Lipid Profile</label>
+                <input type="radio" id="a3" name="option" value="Lipid Profile">
+                
+                <label for="a4">hyroid Stimulating Hormone(TSH)</label>
+                <input type="radio" id="a4" name="option" value="Thyroid Stimulating Hormone(TSH)">
+                <br>
+                <label for="a5">Glucose Test</label>
+                <input type="radio" id="a5" name="option" value="Glucose Test">
+            </div>
+
+            <div>
+                <p><h3>4. Do you want the Hardcopy of the report also?</h3></p>
+                <label for="b1">Yes</label>
+                <input type="radio" id="b1" name="option" value="Yes">
+                <label for="b2">No</label>
+                <input type="radio" id="b2" name="option" value="No">
+            </div>
+
+            <div>
+                <p><h3>5. Select Your Comfortable Date and Time</h3></p>
+
+                <label for="date">Date and Time</label>
+                <div>
+                    <input type="date" />
+                    <input type="time" />
+                  </div>
+            </div>
+            <br>
+            <br>
+            <button type="submit" class="btn_patient">Submit</button>
+            <button type="reset" class="btn_patient">Reset</button>
+
+        </section>
+        
+    </form>
+</body>
+
+</html>
